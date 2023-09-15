@@ -5,21 +5,116 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SINAGTALA</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/script.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    
   </head>
   <body>
+      <div id="popupcon" class="popupcon" >
+        <button id="btnx" onclick="document.getElementById('blur').classList.remove('blur'); document.getElementById('btnx').classList.remove('active'); document.getElementById('popupcon').classList.remove('active');;
+
+        popups.forEach(popup => {
+          popup.classList.remove('active');
+        }); 
+        ">
+        ×
+        </button>
+        <div id="pop1" class="popup">
+          
+          <div class="contcon">
+            <h2>Bring into Light Unforeseen Opportunities</h2>
+            <p>
+            With this initiative, the SSG will provide information and guidance in partnership with the school about in school, national, and international competitions and events where every TPSians can inquire and participate. There are lots of activities that could have increased our school’s profile in different disciplines; However, there is a lack of awareness about the presence of these opportunities.
+            </p>
+            <br>
+            <h2>Bright Clubs and Ignited Organizations</h2>
+            <p>
+            Clubs and organizations are great extracurricular activities. Despite that fact, clubs and organizations in school are mostly low-impact (with just one being  high-impact). There is a lack of exposure when it comes to what our  clubs and organizations do and have accomplished to people outside school. This initiative aims to increase publicity to what our clubs and organizations can do through partnerships with different organizations and increased participation of student members. With these, our low-impact clubs and organizations can turn into high impact ones.
+            </p>
+            <br>
+            <h2>Star Buddy Program</h2>
+            <p>
+            This initiative strives to stimulate students’ critical thinking abilities through small group discussions (SGDs). Through this, students who normally won’t participate in class will be encouraged to share their ideas, perspectives, and confusions, thus promoting active learning. This will be effective if implemented every after class ends. This initiative also includes mentorship programs and student-to-student tuitions where student volunteer mentors guide students explore their shared interests while balancing a good academic standing.
+            </p>
+          </div>
+          <button id="btnx" onclick="document.getElementById('blur').classList.remove('blur'); document.getElementById('btnx').classList.remove('active'); document.getElementById('popupcon').classList.remove('active');
+
+        popups.forEach(popup => {
+          popup.classList.remove('active');
+        }); 
+        ">
+        ×
+        </button>
+        </div>
+
+        <div id="pop2" class="popup">
+          <div class="contcon">
+            <h2>Light the Way for Safety</h2>
+            <p>
+              Installment of waiting shed in the bus stop and finding a safer pathway where students can walk to go to the gas station and the nearby metro.  This will be a collaboration between the student government and the parents’ organization in school.
+            </p>
+            <br>
+            <h2>Counselors, Gleaming Backbones for Wellbeing</h2>
+            <p>
+              With this initiative, we will work closely with the Guidance Department to raise awareness about mental health issues and create support  systems for students facing challenges while also giving parents guidance of what their children may have been experiencing through workshops  and conferences. This initiative will help parents know the best measure to take in order to help their children cope with their struggles in  school.
+            </p>
+          </div>
+          <button id="btnx" onclick="document.getElementById('blur').classList.remove('blur'); document.getElementById('btnx').classList.remove('active'); document.getElementById('popupcon').classList.remove('active');
+
+        popups.forEach(popup => {
+          popup.classList.remove('active');
+        }); 
+        ">
+        ×
+        </button>
+        </div>
+        <div id="pop3" class="popup">
+          <div class="contcon">
+            <h2>Directing Light to Comfortability</h2>
+            <p>
+              With this initiative, sanitary items will be offered to comfort rooms.
+            </p>
+            <br>
+            <h2>Directing Light to Accessibility</h2>
+            <p>
+              With this initiative, printers will be accessible to students coming from second and third floor where there is a designated place each floor   where students can print. Adding more printers is part of this initiative too.
+            </p>
+          </div>
+        </div>
+        <div id="pop4" class="popup">
+          <div class="contcon">
+            <h2>A Brighter, Greener Tomorrow!</h2>
+            <p>
+              With this initiative, recycling programs will be brought back such as the collection and crashing of plastic water bottles. This also focuses   on promoting responsible waste management, and advocates for eco-friendly practices, especially during school events. At the same time, this  aims to encourage students to lessen their use of plastic materials that can only be used for once.
+            </p>
+            <br>
+            <h2>The Fountain for Healthier Environment</h2>
+            <p>
+              Installation of water refill stations in every floor. With this, there will be a decrease in purchase and use of plastic water bottles in   school, thus also promoting the use of tumblers that are far more sustainable.
+            </p>
+          </div>
+        </div>
+        <div id="pop5" class="popup">
+          <div class="contcon">
+            <h2>Honesty Spotlighted</h2>
+            <p>
+              Expansion of Honesty Store. Through this, we can offer more products to the student body as well as gaining consensus as to what is   collectively needed.
+            </p>
+          </div>
+        </div>
+        <div id="pop6" class="popup">
+          <div class="contcon">
+            <h2>You are A Star!</h2>
+            <p>
+              This initiative aims to recognize each student's effort in achieving excellence. This shares a similar concept to awarding the Model Student;   However, this initiative branches out to the different subjects. If students are recognized for their good work, they will be encouraged and  motivated to continue and push the walls of settling for the average.
+            </p>
+          </div>
+        </div>
+      </div>
+    <div id="blur" class="">
     <header>
-      <a href="#" class="logo"><img style="width: 300px; height: auto;" src="./images/logo.png" id="logo" alt="logo" /></a>
-      <ul>
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+      <a href="#" class="logo"><img style="width: 700px; height: auto;" src="./images/logo.png" id="logo" alt="logo" /></a>
     </header>
     <div class="night">
       <div class="star"></div>
@@ -37,7 +132,10 @@
       <img src="./images/mountains_front.png" id="mountains_front" />
     </section>
 
+    
+
     <div class="sec" id="sec">
+      
       <h2>Who are we?</h2>
       <p>A party that will Spark success and Ignite inspiration, through Nurturing harmony while Aiming for ambition, Growth, fostering Tenacity and upholding Accountability under courageous Leader with Adaptability</p>
 
@@ -45,20 +143,57 @@
       <h2>Our Goals</h2>
       <br><br>
     </div>
+
     <div class="swiper">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide"><h1>Maximized Academic and Extracurricular Opportunities</h1> <div class="readmore">Read More</div></div>
-        <div class="swiper-slide"><h1>Extensive Collaboration between Parents, Students, and the School</h1> <div class="readmore">Read More</div></div>
-        <div class="swiper-slide"><h1>Alleviation of Inconvenience by Providing Student Needs</h1> <div class="readmore">Read More</div></div>
-        <div class="swiper-slide"><h1>Increasing Efforts for Environmental Sustainability</h1> <div class="readmore">Read More</div></div>
-        <div class="swiper-slide"><h1>Developing Students’ Integrity and Ethics</h1> <div class="readmore">Read More</div></div>
-        <div class="swiper-slide"><h1>Recognizing Efforts for Greater Student Productivity</h1> <div class="readmore">Read More</div></div>
+        <div class="swiper-slide"><h1>Maximized Academic and Extracurricular Opportunities</h1> 
+          <div class="readmore" onclick="document.getElementById('pop1').classList.add('active'); document.getElementById('blur').classList.add('blur'); document.getElementById('btnx').classList.add('active'); document.getElementById('popupcon').classList.add('active')">Read More</div>
+        </div>
+        <div class="swiper-slide"><h1>Extensive Collaboration between Parents, Students, and the School</h1>
+          <div class="readmore" onclick="document.getElementById('pop2').classList.add('active'); document.getElementById('blur').classList.add('blur'); document.getElementById('btnx').classList.add('active'); document.getElementById('popupcon').classList.add('active')">Read More</div>
+        </div>
+        <div class="swiper-slide"><h1>Alleviation of Inconvenience by Providing Student Needs</h1>
+          <div class="readmore" onclick="document.getElementById('pop3').classList.add('active'); document.getElementById('blur').classList.add('blur'); document.getElementById('btnx').classList.add('active'); document.getElementById('popupcon').classList.add('active')">Read More</div>
+        </div>
+        <div class="swiper-slide"><h1>Increasing Efforts for Environmental Sustainability</h1>
+          <div class="readmore" onclick="document.getElementById('pop4').classList.add('active'); document.getElementById('blur').classList.add('blur'); document.getElementById('btnx').classList.add('active'); document.getElementById('popupcon').classList.add('active')">Read More</div>
+        </div>
+        <div class="swiper-slide"><h1>Developing Students’ Integrity and Ethics</h1> 
+          <div class="readmore" onclick="document.getElementById('pop5').classList.add('active'); document.getElementById('blur').classList.add('blur'); document.getElementById('btnx').classList.add('active'); document.getElementById('popupcon').classList.add('active')">Read More</div>
+        </div>
+        <div class="swiper-slide"><h1>Recognizing Efforts for Greater Student Productivity</h1>
+          <div class="readmore" onclick="document.getElementById('pop6').classList.add('active'); document.getElementById('blur').classList.add('blur'); document.getElementById('btnx').classList.add('active'); document.getElementById('popupcon').classList.add('active')">Read More</div>
+        </div>
         ...
       </div>
+
+
       
     </div>  
+
+    <div>
+      <div class="grid">
+        <div class="grid-item" data-tilt-glare data-tilt-max-glare="0.3"></div>
+        <div class="grid-item "data-tilt-glare data-tilt-max-glare="0.3"></div>
+        <div class="grid-item" data-tilt-glare data-tilt-max-glare="0.3"></div>
+        <div class="grid-item" data-tilt-glare data-tilt-max-glare="0.3"></div>
+        <div class="grid-item" data-tilt-glare data-tilt-max-glare="0.3"></div>
+        <div class="grid-item" data-tilt-glare data-tilt-max-glare="0.3"></div>
+        <div class="grid-item" data-tilt-glare data-tilt-max-glare="0.3"></div>
+        <div class="grid-item" data-tilt-glare data-tilt-max-glare="0.3"></div>
+        <div class="grid-item" data-tilt-glare data-tilt-max-glare="0.3"></div>
+        <div class="grid-item" data-tilt-glare data-tilt-max-glare="0.3"></div>
+        <div class="grid-item" data-tilt-glare data-tilt-max-glare="0.3"></div>
+        <div class="grid-item" data-tilt-glare data-tilt-max-glare="0.3"></div>
+        <div class="grid-item" data-tilt-glare data-tilt-max-glare="0.3"></div>
+        <div class="grid-item" data-tilt-glare data-tilt-max-glare="0.3"></div>
+        <div class="grid-item" data-tilt-glare data-tilt-max-glare="0.3"></div>
+      </div>
+    </div>
+
+    </div>
     
     <script>
       let stars = document.getElementById("stars");
@@ -81,8 +216,6 @@
         text.style.marginRight = value * 4 + "px";
         text.style.marginTop = value * 1.5 + "px";
         btn.style.marginTop = value * 1.5 + "px";
-
-        header.style.top = value * 0.5 + "px";
       });
     </script>
     
@@ -106,6 +239,18 @@
           },
 
       });
+    </script>
+
+    <script src="./js/raw.githubusercontent.com_micku7zu_vanilla-tilt.js_master_dist_vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".grid-item"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+      });
+      
+      //It also supports NodeList
+      VanillaTilt.init(document.querySelectorAll(".grid-item"));
     </script>
   </body>
 </html>

@@ -180,6 +180,135 @@
     </div>
 
     </div>
+    <div class="quotes-wrapper">
+      <h2>Quotes from the team</h2>
+    <div id="quotes">
+      
+      <div class="card">
+        <p>
+          "You, TPSians, are a part of the stars in the skies when with SINAGTALA 🌟"
+        </p>
+        <div class="circle"></div>
+        <img src="images/people/althea.png" class="picture">
+        <h2 class="name">Althea Ellao</h2>
+      </div>
+      <div class="card">
+        <p>
+          "In a sky full of stars, SINAGTALA shines the brightest of them all. ⭐️"
+        </p>
+        <div class="circle"></div>
+        <img src="images/people/samantha.png" class="picture">
+        <h2 class="name">Samatha Tivi</h2>
+      </div>
+      <div class="card">
+        <p>
+          "SINAGTALA will help you ✨ILLUMINATE✨ your OWN PATH. uwu"
+        </p>
+        <div class="circle"></div>
+        <img src="images/people/pam.png" class="picture">
+        <h2 class="name">Paulean De Guzman</h2>
+      </div>
+      <div class="card">
+        <p>
+          "We Sinagtala, are like tiny stars to light up the universe." 
+        </p>
+        <div class="circle"></div>
+        <img src="images/people/mikaella.png" class="picture">
+        <h2 class="name">Mikaella Atienza</h2>
+      </div>
+      <div class="card">
+        <p>
+          "Reach for the stars, and let SINAGTALA guide your journey to greatness." 🌟
+        </p>
+        <div class="circle"></div>
+        <img src="images/people/clarence.png" class="picture">
+        <h2 class="name">Clarence Pagaduan</h2>
+      </div>
+      <div class="card">
+        <p>
+          “SINAGTALA a guiding light leading you to a beaming tomorrow💫✨”
+        </p>
+        <div class="circle"></div>
+        <img src="images/people/eviza.png" class="picture">
+        <h2 class="name">Eviza Reyes</h2>
+      </div>
+      <div class="card">
+        <p>
+          "In a galaxy full of stars SINAGTALA will navigate you to the right path✨🌟"
+        </p>
+        <div class="circle"></div>
+        <img src="images/people/japa.png" class="picture">
+        <h2 class="name">Jhulia Japa</h2>
+      </div>
+      <div class="card">
+        <p>
+          “Here’s to a brighter tomorrow with SINAGTALA 💫” 
+        </p>
+        <div class="circle"></div>
+        <img src="images/people/marasigan.png" class="picture">
+        <h2 class="name">Juliana Marasigan</h2>
+      </div>
+      <div class="card">
+        <p>
+          "Vote SINAGTALA, united we rise, bringing hope and progress through shared skies. 🌟"
+        </p>
+        <div class="circle"></div>
+        <img src="images/people/borbon.png" class="picture">
+        <h2 class="name">Ysabelle Borbon</h2>
+      </div>
+      <div class="card">
+        <p>
+          "With SINAGTALA, we will be your guiding light🌠 and help you SHINE🌟!"
+        </p>
+        <div class="circle"></div>
+        <img src="images/people/nico.png" class="picture">
+        <h2 class="name">Nico Javate</h2>
+      </div>
+      <div class="card">
+        <p>
+          "SINAGTALA will open the gates of galaxies 🌌💫 towards opportunities to make you the brightest star you can be 🌟!"
+        </p>
+        <div class="circle"></div>
+        <img src="images/people/crystalline.png" class="picture">
+        <h2 class="name">Crystalline Sabate</h2>
+      </div>
+      <div class="card">
+        <p>
+          "We will be there for you through your darkest nights,<br>
+          Shining a bright light, like Sinagtala's heights,<br>
+          In every challenge, we'll stand by your side,<br>
+          With unwavering support, together we'll ride."<br>
+        </p>
+        <div class="circle"></div>
+        <img src="images/people/luxely.png" class="picture">
+        <h2 class="name">Luxeley Palaganas</h2>
+      </div>
+      <div class="card">
+        <p>
+          “With the guidance of SINAGTALA, must you not fear the dark, for it reveals the brightest stars!💫”
+        </p>
+        <div class="circle"></div>
+        <img src="images/people/sayuri.png" class="picture">
+        <h2 class="name">Sayuri Madrona</h2>
+      </div>
+      <div class="card">
+        <p>
+          "💜 We, SINAGTALA, will be your celestial compasses that guides you to a path of a brighter future that will make you the brightest star in the universe! 💫✨"
+        </p>
+        <div class="circle"></div>
+        <img src="images/people/naya.png" class="picture">
+        <h2 class="name">Nayara Gonzales</h2>
+      </div>
+      <div class="card">
+        <p>
+          “In life’s darkest times, SINAGTALA will shine as your guiding light, a beacon of hope. 💫” 
+        </p>
+        <div class="circle"></div>
+        <img src="images/people/isha.png" class="picture">
+        <h2 class="name">Isha Esteban</h2>
+      </div>
+    </div>
+    </div>
     
     <script>
       let stars = document.getElementById("stars");
@@ -237,6 +366,15 @@
       
       //It also supports NodeList
       VanillaTilt.init(document.querySelectorAll(".grid-item"));
+  
+      VanillaTilt.init(document.querySelector(".card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+      });
+      
+      //It also supports NodeList
+      VanillaTilt.init(document.querySelectorAll(".card"));
     </script>
   </body>
 </html>

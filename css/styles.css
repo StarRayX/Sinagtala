@@ -210,9 +210,10 @@ section img#mountains_front {
   margin-bottom: 10px;
   color: #fff;
 }
-#gallery h2 {
+#gallery h2, .quotes-wrapper h2 {
   font-size: 3.5em;
-  margin-bottom: 10px;
+  margin-top: 100px;
+  margin-bottom: 50px;
   color: #fff;
 }
 
@@ -396,14 +397,23 @@ section img#mountains_front {
   transform: translateY(-4vh);
 }
 
+#gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #1c0522;
+}
+
 .grid {
-  width: 80%;
-  height: 150vh;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));;
-  grid-gap: 5vw;
-  margin-top: 5vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 90vw;
+  margin-bottom: 10vh;
 }
 
 .grid .grid-item {
@@ -434,6 +444,157 @@ section img#mountains_front {
   padding: 100px 100px 10px;
 }
 
+.quotes-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#quotes {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90vw;
+  transform-style: preserve-3d;
+  margin-top: 10px;
+}
+
+#quotes .card {
+  position: relative;
+  width: 30vh;
+  height: 40vh;
+  margin: 40px;
+  background: #2b1055;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+}
+
+#quotes .card::before {
+  content: 'SINAG';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 70px;
+  font-weight: 900;
+  color: #699BFF;
+  font-style: italic;
+  opacity: 0;
+  transition: 0.5s;
+}
+#quotes .card::after {
+  content: 'TALA';
+  position: absolute;
+  bottom: 0px;
+  right: 00px;
+  font-size: 70px;
+  font-weight: 900;
+  color: #699BFF;
+  font-style: italic;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+
+#quotes .card:hover::after, 
+#quotes .card:hover::before {
+
+  opacity: 0.1;
+}
+#quotes .card:hover::before {
+  top: 20px;
+  left: 20px;
+}
+#quotes .card:hover::after {
+
+  bottom: 20px;
+  right: 60px;
+}
+
+#quotes p {
+  position: absolute;
+  padding: 30px;
+  padding-right: 110px;
+  color: #e4e4e4;
+  font-weight: 500;
+  transition: 0.5s;
+}
+#quotes .card:hover p {
+  transform: translateZ(50px);
+}
+
+#quotes .card:nth-of-type(11) p {
+  font-size: 12px;
+}
+#quotes .card:nth-of-type(12) p {
+  font-size: 10px;
+}
+#quotes .card:nth-of-type(13) p {
+  font-size: 14px;
+}
+#quotes .card:nth-of-type(14) p {
+  font-size: 12px;
+}
+
+#quotes .picture {
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  max-width: 250px;
+  transition: 0.5s;
+  z-index: 11;
+  transform-style: preserve-3d;
+  transform: translate3d(-25%,-50%,0px)
+}
+
+#quotes .card:hover .picture {
+  transform: translate3d(-25%,-50%,75px);
+}
+
+#quotes .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 325px;
+  height: 325px;
+  transition: 0.5s;
+  background-image: url(/images/labryinth.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform-style: preserve-3d;
+  z-index: 10;
+  opacity: 1;
+  transform: translate3d(-30%,-40%,0px)
+}
+
+#quotes .card:hover .circle {
+  transform: translate3d(-30%,-40%,25px);
+}
+
+#quotes .card .name {
+  width: 100%;
+  text-align: center;
+  color: #e4e4e4;
+  font-size: 20px;
+  position: absolute;
+  opacity: 0;
+  top: 90%;
+  left: 50%;
+  transform: translate3d(-50%,0%,0px);
+  z-index: 12;
+  padding: 0;
+  margin: 0;
+  transition: 0.5s;
+}
+
+#quotes .card:hover .name {
+  opacity: 1;
+  top: 50%;
+  transform: translate3d(-50%,450%,100px);
+}
 /*---------------------------------------------------------------*/
 @media (max-width: 500px) {
   .logo img {

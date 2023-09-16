@@ -67,13 +67,30 @@ header {
   overflow: hidden;
 }
 
+.popup .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 1000px;
+  background-image: url(/images/labryinth.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform-style: preserve-3d;
+  z-index: 10;
+  opacity: 0.4;
+  transform: translate3d(-15%,-50%,0px)
+}
+
 .contcon {
   position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    overflow: hidden;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  overflow: hidden;
+  z-index: 11;
 }
 
 .active {
@@ -449,6 +466,7 @@ section img#mountains_front {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  background-color: #1c0522;
 }
 
 #quotes {
@@ -460,6 +478,7 @@ section img#mountains_front {
   width: 90vw;
   transform-style: preserve-3d;
   margin-top: 10px;
+  
 }
 
 #quotes .card {
@@ -629,6 +648,7 @@ section img#mountains_front {
     font-size: 12px;
     width: 300px;
     height: 80vh;
+
   }
 
   .contcon {
@@ -658,5 +678,20 @@ section img#mountains_front {
   }
   #btn {
     font-size: 15px;
+  }
+  .popup .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    background-image: url(/images/labryinth.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform-style: preserve-3d;
+    z-index: 10;
+    opacity: 0.4;
+    transform: translate3d(-20%,-50%,0px)
   }
 }

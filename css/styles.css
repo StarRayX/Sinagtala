@@ -194,7 +194,7 @@ section img#mountains_front {
   background-color: #fff;
   color: #2b1055;
   font-size: 1.5em;
-  z-index: 9;
+  z-index: 20;
   transform: translateY(100px);
 }
 
@@ -206,6 +206,11 @@ section img#mountains_front {
 }
 
 .sec h2 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+#gallery h2 {
   font-size: 3.5em;
   margin-bottom: 10px;
   color: #fff;
@@ -425,6 +430,10 @@ section img#mountains_front {
   &:nth-of-type(15) {background-image: url('../images/gallery/15.jpg'); background-position: calc(50% - 20px) 50%; background-size: 120% 170%;}
 }
 
+#gallery h2 {
+  padding: 100px 100px 10px;
+}
+
 /*---------------------------------------------------------------*/
 @media (max-width: 500px) {
   .logo img {
@@ -485,5 +494,8 @@ section img#mountains_front {
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) !important;
+  }
+  #btn {
+    font-size: 15px;
   }
 }

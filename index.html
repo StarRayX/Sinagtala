@@ -12,11 +12,12 @@
   </head>
   <body>
       <div id="popupcon" class="popupcon" >
-        <button id="btnx" onclick="document.getElementById('blur').classList.remove('blur'); document.getElementById('btnx').classList.remove('active'); document.getElementById('popupcon').classList.remove('active');;
-
+        <button id="btnx" onclick="document.getElementById('blur').classList.remove('blur'); document.getElementById('btnx').classList.remove('active'); document.getElementById('popupcon').classList.remove('active');
+        const popups = document.querySelectorAll('.popup');
         popups.forEach(popup => {
           popup.classList.remove('active');
-        }); 
+        });
+
         ">
         ×
         </button>
@@ -38,14 +39,6 @@
             This initiative strives to stimulate students’ critical thinking abilities through small group discussions (SGDs). Through this, students who normally won’t participate in class will be encouraged to share their ideas, perspectives, and confusions, thus promoting active learning. This will be effective if implemented every after class ends. This initiative also includes mentorship programs and student-to-student tuitions where student volunteer mentors guide students explore their shared interests while balancing a good academic standing.
             </p>
           </div>
-          <button id="btnx" onclick="document.getElementById('blur').classList.remove('blur'); document.getElementById('btnx').classList.remove('active'); document.getElementById('popupcon').classList.remove('active');
-
-        popups.forEach(popup => {
-          popup.classList.remove('active');
-        }); 
-        ">
-        ×
-        </button>
         </div>
 
         <div id="pop2" class="popup">
@@ -60,14 +53,6 @@
               With this initiative, we will work closely with the Guidance Department to raise awareness about mental health issues and create support  systems for students facing challenges while also giving parents guidance of what their children may have been experiencing through workshops  and conferences. This initiative will help parents know the best measure to take in order to help their children cope with their struggles in  school.
             </p>
           </div>
-          <button id="btnx" onclick="document.getElementById('blur').classList.remove('blur'); document.getElementById('btnx').classList.remove('active'); document.getElementById('popupcon').classList.remove('active');
-
-        popups.forEach(popup => {
-          popup.classList.remove('active');
-        }); 
-        ">
-        ×
-        </button>
         </div>
         <div id="pop3" class="popup">
           <div class="contcon">
@@ -173,7 +158,8 @@
       
     </div>  
 
-    <div>
+    <div id="gallery">
+      <h2>Gallery</h2>
       <div class="grid">
         <div class="grid-item" data-tilt-glare data-tilt-max-glare="0.3"></div>
         <div class="grid-item "data-tilt-glare data-tilt-max-glare="0.3"></div>

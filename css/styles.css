@@ -450,11 +450,11 @@ section img#mountains_front {
   &:nth-of-type(8) {background-image: url('../images/gallery/8.jpg');}
   &:nth-of-type(9) {background-image: url('../images/gallery/9.jpg');}
   &:nth-of-type(10) {background-image: url('../images/gallery/10.jpg');}
-  &:nth-of-type(11) {background-image: url('../images/gallery/11.jpg');}
-  &:nth-of-type(12) {background-image: url('../images/gallery/12.jpg');}
-  &:nth-of-type(13) {background-image: url('../images/gallery/13.jpg'); background-position: calc(50% + 5px) 50%; background-size: 120% 170%;}
-  &:nth-of-type(14) {background-image: url('../images/gallery/14.jpg'); background-position: calc(50% - 5px) 50%; background-size: 120% 170%;}
-  &:nth-of-type(15) {background-image: url('../images/gallery/15.jpg'); background-position: calc(50% - 20px) 50%; background-size: 120% 170%;}
+  &:nth-of-type(11) {background-image: url('../images/gallery/11.JPG');}
+  &:nth-of-type(12) {background-image: url('../images/gallery/12.JPG');}
+  &:nth-of-type(13) {background-image: url('../images/gallery/13.JPG'); background-position: calc(50% + 5px) 50%; background-size: 120% 170%;}
+  &:nth-of-type(14) {background-image: url('../images/gallery/14.JPG'); background-position: calc(50% - 5px) 50%; background-size: 120% 170%;}
+  &:nth-of-type(15) {background-image: url('../images/gallery/15.JPG'); background-position: calc(50% - 20px) 50%; background-size: 120% 170%;}
 }
 
 #gallery h2 {

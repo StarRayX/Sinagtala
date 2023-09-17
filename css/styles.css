@@ -768,7 +768,7 @@ body::-webkit-scrollbar-thumb
     left: 50%;
     width: 500px;
     height: 500px;
-    background-image: url(/images/labryinth.png);
+    background-image: url('../images/labryinth.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

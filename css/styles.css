@@ -124,13 +124,14 @@ button#btnx:hover {
   font-size: 3vw;
 }
 
-header .logo {
-  color: #fff;
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 75% !important;
 }
 
 header ul {
@@ -628,6 +629,7 @@ section img#mountains_front {
 }
 /*---------------------------------------------------------------*/
 @media (max-width: 500px) {
+  
   body {
   overflow-x: hidden; /* Hide vertical scrollbar */
   }
@@ -666,6 +668,11 @@ section img#mountains_front {
 
   }
   
+  #text {
+    right: -140vw;
+    font-size: 10vh;
+  }
+
   .contcon {
     top: 0;
     transform: none;

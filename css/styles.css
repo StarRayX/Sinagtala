@@ -618,7 +618,7 @@ section img#mountains_front {
   width: 325px;
   height: 325px;
   transition: 0.5s;
-  background-image: url(/images/labryinth.png);
+  background-image: url('../images/labryinth.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;

@@ -20,6 +20,11 @@ body {
   overflow-x: hidden;
 }
 
+body.active {
+  overflow: hidden;
+  position: fixed;
+}
+
 header {
   position: absolute;
   top: 20vh;
@@ -90,9 +95,9 @@ header {
   position: relative;
   overflow-x: hidden;
   z-index: 11;
-  top: 50%;
+  
   left: 50%;
-  transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -0%, 0);
 }
 
 .popup::-webkit-scrollbar-track

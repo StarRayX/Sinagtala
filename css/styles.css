@@ -73,7 +73,7 @@ header {
   left: 50%;
   width: 1000px;
   height: 1000px;
-  background-image: url(/images/labryinth.png);
+  background-image: url('../images/labryinth.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
